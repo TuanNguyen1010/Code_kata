@@ -13,4 +13,8 @@ describe '#remove_duplicates' do
     expect( remove_duplicates([3, 4, 4, 3])).to eq([4, 3])
     end
 
+  it('should remove duplicates 3 from left of input list [3, 4, 4, 3, 6, 3') do
+    expect( remove_duplicates([4, 3, 6, 3])).to eq([4, 6, 3])
+  end
+  
 end
