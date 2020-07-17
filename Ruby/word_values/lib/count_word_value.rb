@@ -1,5 +1,6 @@
 def count_word_value(array)
   codepoint_before_letter = 96
+  index = 0
   array.map {|string|
     total = 0
     string.split('').each {|ch| 
@@ -7,6 +8,7 @@ def count_word_value(array)
         total += ch.ord - codepoint_before_letter
       end
     }
-    total
+    index += 1
+    total * index
   }
 end 

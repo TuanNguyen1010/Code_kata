@@ -16,4 +16,12 @@ describe "#count_word_value" do
   it('received a input string with space inbetween') do 
     expect(count_word_value(['a b'])).to eq([3])
   end 
+
+  it('recives 2 element array input') do 
+    expect(count_word_value(['abc', 'a'])).to eq([6, 2])
+  end 
+
+  it('receives an array with 3 separate strings') do
+    expect(count_word_value(['codewars', 'abc', 'xyz'])).to eq([88, 12, 225])
+  end 
 end 
