@@ -11,3 +11,14 @@ You will be given a list of strings and your task will be to return the values o
 Input will only contain lowercase characters and spaces.
 
 Good luck!
+
+| Input    | Output|
+|----------|-------|
+|['a']     | [1]   |
+|['ab']    | [3]   |
+|['abc']   | [6]   |
+|['a b']   | [3]   |
+|'abc', 'a'| [6, 2]| 
+|['codewars', 'abc', 'xyz'] | [88, 12, 225]|
+
+
