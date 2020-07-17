@@ -13,4 +13,7 @@ describe "#count_word_value" do
     expect(count_word_value(['abc'])).to eq([6])
   end
   
+  it('received a input string with space inbetween') do 
+    expect(count_word_value(['a b'])).to eq([3])
+  end 
 end 

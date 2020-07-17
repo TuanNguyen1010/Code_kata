@@ -4,7 +4,11 @@ def count_word_value(array)
   array.each {|string|
     arr = string.split('')
     total = 0
-    arr.each {|ch| total += ch.ord - codepoint_before_letter}
+    arr.each {|ch| 
+    if(ch != ' ')
+      total += ch.ord - codepoint_before_letter
+    end 
+    }
     new_arr.push(total)
   }
   return new_arr
