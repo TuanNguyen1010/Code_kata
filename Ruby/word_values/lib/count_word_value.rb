@@ -1,9 +1,4 @@
 def count_word_value(array)
-  # if (array == ['ab'])
-  #   return [3]
-  # else 
-  #   return [1]
-  # end
   new_arr = []
   array.each {|string|
     arr = string.split('')

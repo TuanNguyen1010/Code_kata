@@ -12,4 +12,5 @@ describe "#count_word_value" do
   it('recieves input of 3 letter string') do 
     expect(count_word_value(['abc'])).to eq([6])
   end
+  
 end 
