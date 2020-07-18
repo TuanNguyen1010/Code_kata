@@ -8,4 +8,8 @@ describe '#calculate_mistake' do
   it('adds 2 single digit inputs') do 
     expect(calculate_mistake(1,2)).to eq(3)
   end 
+
+  it('adds 2 double digit together 16 + 18') do
+    expect(calculate_mistake(16, 18)).to eq(214)
+  end 
 end 
