@@ -14,6 +14,10 @@ describe '#calculate_mistake' do
   end 
 
   it('adds a 3 digit and 2 digit number together') do
-  expect(calculate_mistake(122,81)).to eq(1103)
-  end 
+    expect(calculate_mistake(122,81)).to eq(1103)
+  end
+
+  it('adds a 2 digit number and a 3 digit number') do
+    expect(calculate_mistake(75,124)).to eq(199)
+  end
 end 
