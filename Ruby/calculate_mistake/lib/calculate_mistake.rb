@@ -1,3 +1,3 @@
 def calculate_mistake(a, b)
-  return 0
+  return a+b
 end 
