@@ -1,31 +1,25 @@
 def calculate_mistake(a, b)
-  # return a+b
-  string_a = a.to_s.split('')
-  string_b = b.to_s.split('')
+  
+  if (a.to_s.length >= b.to_s.length)
+    long_string = a.to_s.split('')
+    short_string = b.to_s.split('')
+  else 
+    long_string = b.to_s.split('')
+    short_string = a.to_s.split('')
+  end
+
   new_arr = []
-  index_point = (string_a.length - string_b.length).abs
-  if(string_a.length >= string_b.length)
-    string_a.each_with_index {|number, index|
+  index_point = long_string.length - short_string.length
+
+    long_string.each_with_index {|number, index|
       if (index_point > 0 && index_point > index)
         new_arr.push(number)
       elsif (index_point > 0)
-        new_arr.push(number.to_i + string_b[index-index_point].to_i)
+        new_arr.push(number.to_i + short_string[index-index_point].to_i)
       else 
-        new_arr.push(number.to_i + string_b[index].to_i)
+        new_arr.push(number.to_i + short_string[index].to_i)
       end 
-    }
-  else 
-    string_b.each_with_index {|number, index|
-    if (index_point > 0 && index_point > index)
-      new_arr.push(number)
-    elsif (index_point > 0)
-      new_arr.push(number.to_i + string_a[index-index_point].to_i)
-    else 
-      new_arr.push(number.to_i + string_a[index].to_i)
-    end 
-  }
-end 
-    
+    } 
 
   return new_arr.join('').to_i
 end 
