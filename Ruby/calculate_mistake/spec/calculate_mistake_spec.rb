@@ -12,4 +12,8 @@ describe '#calculate_mistake' do
   it('adds 2 double digit together 16 + 18') do
     expect(calculate_mistake(16, 18)).to eq(214)
   end 
+
+  it('adds a 3 digit and 2 digit number together') do
+  expect(calculate_mistake(122,81)).to eq(1103)
+  end 
 end 
