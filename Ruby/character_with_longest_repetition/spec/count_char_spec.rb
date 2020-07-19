@@ -20,4 +20,5 @@ describe('#count_char') do
   it('takes an empty string') do
     expect(count_char('')).to eq(['', 0])
   end 
+  
 end 
