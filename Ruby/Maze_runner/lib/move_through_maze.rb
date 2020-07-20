@@ -19,16 +19,13 @@ def move_through_maze(maze, directions)
   second_array = location[0]
 
   if(maze[first_array][second_array] == 3)
-    p 'winning'
+    # p 'winning'
     return 'Finish'
+  elsif(maze[first_array][second_array] == 1)
+    return 'Dead'
   end 
   }
 end 
-
-# 'N' = [location[0], location[1] + 1]
-# 'S' = [location[0]], location[1] - 1]
-# 'W' = [location[0] - 1, location[1]]
-# 'E' = [location[0]+ 1, location[1]]
 
 def find_location(maze)
   maze.each_with_index {|array, index|
