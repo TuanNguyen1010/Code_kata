@@ -20,4 +20,8 @@ describe('#move_through_maze') do
   it('takes maze input and direction. Output walks off maze') do
     expect(move_through_maze(maze, ["N","N","N","N","N","E","E","S","S","S","S","S","S"])).to eq('Dead')
   end 
+
+  it('takes maze input and direction for lost Output') do
+    expect(move_through_maze(maze, ["N","E","E","E","E"])).to eq('Lost')
+  end
 end 

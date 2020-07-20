@@ -32,6 +32,7 @@ def move_through_maze(maze, directions)
     return 'Dead'
   end 
   }
+  return 'Lost'
 end 
 
 def find_location(maze)
