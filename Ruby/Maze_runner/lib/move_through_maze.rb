@@ -1,5 +1,6 @@
 def move_through_maze(maze, directions)
   location = find_location(maze)
+  grid_size = maze.length - 1
 
   directions.each {|movement|
   if(movement == 'N')
@@ -8,6 +9,8 @@ def move_through_maze(maze, directions)
     p location
   elsif(movement == 'S')
     location = [location[0], location[1] + 1]
+    p 'move south'
+    p location
   elsif(movement == 'W')
     location = [location[0] - 1, location[1]]
   else 
@@ -15,11 +18,15 @@ def move_through_maze(maze, directions)
     p 'move east'
     p location
   end 
-  first_array = location[1]
-  second_array = location[0]
+  
+  if (location[1] > grid_size)
+    return 'Dead'
+  else 
+    first_array = location[1]
+    second_array = location[0]
+  end 
 
   if(maze[first_array][second_array] == 3)
-    # p 'winning'
     return 'Finish'
   elsif(maze[first_array][second_array] == 1)
     return 'Dead'
