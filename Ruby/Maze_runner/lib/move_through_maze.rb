@@ -5,18 +5,12 @@ def move_through_maze(maze, directions)
   directions.each {|movement|
   if(movement == 'N')
     location = [location[0], location[1] - 1 ]
-    p 'move north'
-    p location
   elsif(movement == 'S')
     location = [location[0], location[1] + 1]
-    p 'move south'
-    p location
   elsif(movement == 'W')
     location = [location[0] - 1, location[1]]
   else 
     location = [location[0]+ 1, location[1]]
-    p 'move east'
-    p location
   end 
   
   if (location[1] > grid_size)
