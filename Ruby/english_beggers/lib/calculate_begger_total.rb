@@ -4,7 +4,7 @@ def calculate_begger_total(values, n)
     if(!array[n-1])
       array.push(v)
     else
-      array[0] +=  v
+      array[i % n] +=  v
     end
   }
   return array
