@@ -1,7 +1,11 @@
 def calculate_begger_total(values, n)
-  array = [0]
-  values.each {|single|
-    array[0] +=  single
+  array = []
+  values.each_with_index {|v, i|
+    if(!array[n-1])
+      array.push(v)
+    else
+      array[0] +=  v
+    end
   }
   return array
 end 
