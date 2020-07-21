@@ -15,6 +15,6 @@ Note: in case you don't get why this kata is about English beggars, then you are
 |[1], 1              | [1]      |
 |[1,2,3,4,5], 1      | [15]     |
 |[1,2], 2            | [1, 2]   |
-|[1,2,3], 2          | [3, 2]   |
+|[1,2,3], 2          | [4, 2]   |
 |[1,2,3,4,5], 2      | [9, 6]   |
 |[1,2,3,4,5], 3      | [5, 7, 3]|
