@@ -10,11 +10,12 @@ Also note that not all beggars have to take the same amount of "offers", meaning
 
 Note: in case you don't get why this kata is about English beggars, then you are not familiar on how religiously queues are taken in the kingdom ;)
 
-|Input               | Output   |
-|--------------------|----------|
-|[1], 1              | [1]      |
-|[1,2,3,4,5], 1      | [15]     |
-|[1,2], 2            | [1, 2]   |
-|[1,2,3], 2          | [4, 2]   |
-|[1,2,3,4,5], 2      | [9, 6]   |
-|[1,2,3,4,5], 3      | [5, 7, 3]|
+|Input               | Output       |
+|--------------------|--------------|
+|[1], 1              | [1]          |
+|[1,2,3,4,5], 1      | [15]         |
+|[1,2], 2            | [1,2]       |
+|[1,2,3], 2          | [4,2]       |
+|[1,2,3,4,5], 2      | [9,6]       |
+|[1,2,3,4,5], 3      | [5,7,3]    |
+|[1,2,3,4,5], 6      | [1,2,3,4,5,0]|
