@@ -28,4 +28,8 @@ describe('#calculate_begger_total') do
   it('takes an array with 5 elements and 6 beggers') do
     expect(calculate_begger_total([1,2,3,4,5], 6)).to eq([1,2,3,4,5,0])
   end
+
+  it('takes an array with 5 element and 0 beggers') do
+    expect(calculate_begger_total([1,2,3,4,5], 0)).to eq([])
+  end 
 end 

@@ -1,5 +1,8 @@
 def calculate_begger_total(values, n)
   array = []
+  if(n == 0)
+    return array
+  end 
 
   n.times{
     array.push(0)
