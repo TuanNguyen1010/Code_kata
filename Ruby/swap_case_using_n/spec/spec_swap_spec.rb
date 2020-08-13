@@ -10,4 +10,8 @@ describe("#spec_swap") do
     expect(spec_swap("Hello world!", 11)).to eq("heLLO wORLd!")
   end 
   
+
+  it('takes a string containing every letter and swap to lower case base on n') do
+    expect(spec_swap("the quick broWn fox leapt over the fence", 9)).to eq("The QUicK BrowN foX LeaPT ovER thE FenCE")
+  end 
 end 
