@@ -9,7 +9,7 @@ def remove_consecutive_duplicates(array)
       current_letter = v
     end 
   }
-  output.push(new_word)
+  output.push(new_word.join())
 }
-return [output.join()]
+return output
 end 
