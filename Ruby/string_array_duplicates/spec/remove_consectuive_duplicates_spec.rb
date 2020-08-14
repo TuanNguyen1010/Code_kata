@@ -8,4 +8,8 @@ describe('#remove_consecutive_duplicates') do
   it('accepts array with Hello and remove duplicate') do
     expect(remove_consecutive_duplicates(["Hello"])).to eq(["Helo"])
   end
+
+  it('takes array with abracadabra and removes duplciate') do
+    expect(remove_consecutive_duplicates(['abracadabra'])).to eq(['abracadabra'])
+  end
 end 
