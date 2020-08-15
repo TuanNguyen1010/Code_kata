@@ -12,4 +12,8 @@ describe('#calculate_sum_of_digits') do
   it('test sum of 2 digit input that needs to be repeated') do
     expect(calculate_sum_of_digits(94)).to eq(4)
   end
+
+  it('test sum of 3 digit number') do
+    expect(calculate_sum_of_digits(942)).to eq(6)
+  end 
 end 
