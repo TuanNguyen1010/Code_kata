@@ -1,10 +1,6 @@
 def calculate_sum_of_digits(integer)
-  total = 0
-
-  integer.to_s.split('').each {|v| 
-  total += v.to_i 
-  }
-  while (total.to_s.split('')[1])
+  total = integer
+  while (total > 10)
     new_total = 0
     total.to_s.split('').each {|v|
     new_total += v.to_i 
