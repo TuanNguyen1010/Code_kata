@@ -16,4 +16,12 @@ describe('#calculate_sum_of_digits') do
   it('test sum of 3 digit number') do
     expect(calculate_sum_of_digits(942)).to eq(6)
   end 
+
+  it('test sum of 6 digit input') do
+    expect(calculate_sum_of_digits(132189)).to eq(6)
+  end
+
+  it('takes in input that requires 3rd loop') do
+    expect(calculate_sum_of_digits(493193)).to eq(2)
+  end 
 end 
