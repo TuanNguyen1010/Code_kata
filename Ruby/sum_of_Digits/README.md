@@ -18,4 +18,5 @@ Given ```n```, take the sum of the digits of ```n```. If that value has more tha
 |16           | 7             |
 |94           | 4             |
 |942          | 6             |
-132189        | 6             |
+|132189       | 6             |
+|493193       | 2             |
