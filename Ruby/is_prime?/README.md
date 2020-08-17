@@ -17,3 +17,10 @@ is_prime(1)  /* false */
 is_prime(2)  /* true  */
 is_prime(-1) /* false */
 ```
+
+|Input   | Output   |
+|--------|----------|
+|-1      | false    |
+|1       | false    |
+|2       | true     |
+|7       | true     |
