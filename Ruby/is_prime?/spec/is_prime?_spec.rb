@@ -20,4 +20,8 @@ describe('#is_prime?') do
   it('takes input of 958297') do
     expect(is_prime?(958297)).to eq(false)
   end 
+
+  it('takes input of 457') do
+    expect(is_prime?(457)).to eq(true)
+  end 
 end 
