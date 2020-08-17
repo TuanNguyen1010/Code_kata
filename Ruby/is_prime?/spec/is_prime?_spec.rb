@@ -16,4 +16,8 @@ describe('#is_prime?') do
   it('takes input of 3') do
     expect(is_prime?(3)).to eq(true)
   end
+
+  it('takes input of 958297') do
+    expect(is_prime?(958297)).to eq(false)
+  end 
 end 
