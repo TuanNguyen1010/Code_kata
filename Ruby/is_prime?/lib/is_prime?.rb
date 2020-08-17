@@ -1,3 +1,9 @@
 def is_prime?(number)
-  return false
+  if number <= 0
+    return false
+  elsif number % 2 == 0
+    return false
+  else 
+    return true
+  end 
 end 
